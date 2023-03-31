@@ -1,0 +1,113 @@
+:root {
+  --clr-bg-body: #e8eaec;
+  --clr-bg-content: #ffffff;
+  --clr-online: #209a54;
+  --clr-txt: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+
+img {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--clr-bg-body);
+  padding: 0.5em;
+  margin: 1em;
+}
+
+/* img::after {
+  content: "";
+  background-color: var(--clr-online);
+  padding: 2em;
+} */
+
+header {
+  background: linear-gradient(black 50%, var(--clr-bg-body) 50%);
+}
+
+main {
+  background-color: var(--clr-bg-body);
+  padding-bottom: 5em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+.profile-container {
+  background-color: var(--clr-bg-content);
+  max-width: 380px;
+  margin-left: 1em;
+  border-radius: 5%;
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+  border-bottom: gray 1px solid;
+}
+
+.mitglied-headline {
+  padding-top: 1.3em;
+}
+
+.mitglied-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.mitglied-date::before {
+  content: "";
+  background-color: #6a1cc3;
+  padding: 0.5em;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.roles-container {
+  display: flex;
+  margin-top: 0.5em;
+}
+
+.roles-container-linebreak {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.roles-container p,
+.roles-container-linebreak p {
+  background-color: var(--clr-bg-body);
+  padding: 0.3em 0.5em;
+  border-radius: 5%;
+  margin: 0.2em 0.2em;
+}
+
+.roles-container-linebreak p::before,
+.roles-container p::before {
+  content: "";
+  background-color: #6a1cc3;
+  padding: 0.5em;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.5em;
+}
